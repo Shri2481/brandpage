@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;1,100;1,200;1,300;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background: black;
+    overflow-x: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    margin: 15px;
+    position: relative;
+}
+
+.blackFriday {
+    display: flex;
+    justify-content: start;
+}
+
+.blackFriday p {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.blackFriday #friday {
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 28px;
+    margin-top: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    transition: color 0.9s ease;
+}
+
+nav ul li a:hover {
+    color: red;
+    border-bottom: 1px solid red;
+    padding-bottom: 15px;
+}
+
+.bagIcon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blackFriday {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+}
+
+.container {
+    height: 100vh; /* 100% of the viewport height */
+    width: 100%; /* Optional: 100% width */
+    box-sizing: border-box; /* Optional: include padding and border in the total width and height */
+}
+
+/* Default styles */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section i {
+    margin-top: 200px;
+    color: #FC3746;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.section-heading p {
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.section-heading #secondary-heading {
+    color: #FC3746;
+    padding-left: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.section-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.section-btn button {
+    width: 150px;
+    height: 55px;
+    background: #c71f2d;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.7s ease;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.section-btn button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    section i {
+        margin-top: 100px; /* Adjust margin for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
+        
+    }
+
+    .section-heading p,
+    .section-heading #secondary-heading {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    .section-btn button {
+        width: 120px; /* Adjust button width for smaller screens */
+        height: 45px; /* Adjust button height for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Default styles for larger screens */
+.box {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    width: 300px;
+    border: 1px solid white;
+    background: black;
+    margin: 30px;
+}
+
+.boxes p {
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .box {
+        margin-top: 80px; /* Adjust the margin for smaller screens */
+    }
+
+    .boxes {
+        height: 180px; /* Adjust the height for smaller screens */
+        width: 250px; /* Adjust the width for smaller screens */
+        margin: 20px; /* Adjust the margin for smaller screens */
+    }
+
+    .boxes p {
+        font-size: 60px; /* Adjust the font size for smaller screens */
+    }
+}
+
+/* Base styles for larger screens */
+.stone {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.stone-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stone-content #off {
+    font-size: 40px;
+    font-weight: bold;
+    color: #FC3746;
+}
+
+.stone-content p {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.stone-img {
+    margin: 30px;
+}
+
+.stone-btn {
+    margin-top: 50px;
+}
+
+.stone-btn button {
+    width: 200px;
+    height: 60px;
+    background-color: #FC3746;
+    font-size: 18px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .stone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stone-content {
+        text-align: center;
+    }
+
+    .stone-img {
+        margin: 15px 0;
+    }
+
+    .stone-btn {
+        margin-top: 30px;
+    }
+
+    .stone-btn button {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+/* Default styles for larger screens */
+.immortal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.immortal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.immortal-img {
+    margin: 30px;
+}
+
+.immortal-content #friday {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FC3746;
+}
+
+.immortal-content p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.immortal-content #upto {
+    color: #FC3746;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.immortal-btn {
+    margin-top: 50px;
+}
+
+.immortal-btn button {
+    width: 200px;
+    height: 60px;
+    background-color: #FC3746;
+    font-size: 18px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .immortal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .immortal-content {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .immortal-img {
+        margin: 20px 0;
+    }
+
+    .immortal-btn {
+        margin-top: 30px;
+    }
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px; /* Adjusted margin for better responsiveness */
+
+    /* Added max-width to prevent the container from becoming too wide on larger screens */
+    max-width: 100%;
+    padding: 0 20px; /* Added padding to the sides for better spacing on smaller screens */
+}
+
+.heading i {
+    color: #FC3746;
+    font-size: 30px; /* Adjusted font size for better responsiveness */
+    font-weight: bold;
+}
+
+.heading h1 {
+    color: white;
+    font-size: 50px; /* Adjusted font size for better responsiveness */
+    font-weight: bolder;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .heading {
+        margin-top: 50px; /* Adjusted margin for smaller screens */
+    }
+
+    .heading i {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+
+    .heading h1 {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+    }
+}
+
+
+/* Default styles for larger screens */
+.sellers {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 30px;
+}
+
+.sellers-box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+
+.seller-box-img {
+    width: 300px;
+    height: 350px;
+}
+
+.seller-box-img img {
+    width: 100%;
+    height: 348px;
+}
+
+.seller-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.seller-box-content h3 {
+    color: white;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .sellers {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 15px;
+    }
+
+    .sellers-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .seller-box-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .seller-box-content {
+        height: auto;
+        text-align: center;
+    }
+}
+
+/* Default styles */
+.heading-content {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.heading-content p {
+    color: white;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+    margin-top: 200px;
+    width: 100%;
+    height: 100px;
+}
+
+.footer p {
+    color: white;
+    font-size: 22px;
+}
+
+#name {
+    color: #FC3746;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .heading-content {
+        margin-top: 80px;
+    }
+
+    .heading-content p {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .footer {
+        margin-top: 100px;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
+
+    #name {
+        font-size: 20px;
+    }
+}
